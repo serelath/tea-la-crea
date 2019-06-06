@@ -1,0 +1,49 @@
+//positioning
+@mixin centerer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@mixin centerX {
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+}
+@mixin centerY {
+    transform: translateY(-50%);
+    top: 50%;
+    position: absolute;
+}
+
+//media query
+@mixin mQup($px) {
+    @media (min-width:$px) { @content; }
+}
+@mixin mQ($px) {
+    @media (max-width:$px) { @content; }
+}
+
+// box sizing
+@mixin boxSizing {
+    -webkit-box-sizing: border-box !important;
+	-moz-box-sizing: border-box !important;
+	-ms-box-sizing: border-box !important;
+	box-sizing: border-box !important;
+}
+
+// health benefit num
+@mixin healthNum {
+	font-size: 6.7rem;
+	color: $green;
+	position: absolute;
+	top: -62px;
+	left: -65px;
+	z-index: 11;
+	@include mQ($xs) {
+		font-size: 3rem;
+		top: 0 ;
+		left: 50% !important;
+		transform: translate(-50%, -100%);
+	}
+}
