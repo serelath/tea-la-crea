@@ -244,11 +244,11 @@
       -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
-      top: 79%;
+      top: 80%;
       width: 100%; }
       @media (max-width: 1200px) {
         .listings > a > div .label {
-          top: 79%; } }
+          top: 80%; } }
       .listings > a > div .label h6 {
         position: relative;
         font-size: 1rem !important;
@@ -258,6 +258,7 @@
           .listings > a > div .label h6 {
             font-size: 0.8rem !important; } }
       .listings > a > div .label h5 {
+        margin-top: 5px !important;
         font-size: 1rem !important;
         font-family: "EB Garamond", serif !important; }
       .listings > a > div .label .cost h5, .listings > a > div .label .cost p, .listings > a > div .label .cost h6 {
@@ -434,6 +435,9 @@ html, body {
   font-size: 16px;
   overflow-x: hidden; }
 
+body {
+  background-color: #1a1a1a; }
+
 body::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: white; }
@@ -534,23 +538,6 @@ p {
 .green {
   color: #7ab08d !important; }
 
-.line-streak {
-  padding: 0 20px;
-  display: inline-block;
-  position: relative; }
-  .line-streak::after {
-    content: '';
-    width: 100%;
-    height: 1px;
-    z-index: -1;
-    background-color: #606060;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%); }
-
 .container-fluid {
   margin: 0 !important;
   padding: 0 !important; }
@@ -639,7 +626,7 @@ img {
           .nav-container .navbar .navbar-nav .dropdown .dropdown-menu {
             position: relative;
             top: 0; } }
-        @media (max-width: 1200px) {
+        @media (max-width: 992px) {
           .nav-container .navbar .navbar-nav .dropdown .dropdown-menu a {
             padding: 5px !important;
             color: #1a1a1a !important; } }
@@ -917,11 +904,9 @@ img {
       z-index: 1; }
     #home .our-story .btn {
       margin-top: -25px; }
-    #home .our-story .flower-bed {
-      opacity: 0.8; }
-      @media (max-width: 767px) {
-        #home .our-story .flower-bed {
-          width: 1000px !important; } }
+    @media (max-width: 767px) {
+      #home .our-story .flower-bed {
+        width: 1000px !important; } }
     #home .our-story .herb {
       opacity: 0.8;
       margin-left: -15px; }
@@ -1029,17 +1014,17 @@ img {
 
 #our-story {
   background-color: #f9f9f9; }
-  #our-story .flower-bed:first-child {
+  #our-story .flower-bed {
     margin-top: -5vw;
     width: 100%;
     background-color: #f1f1f1;
     position: absolute;
     z-index: 10; }
     @media (max-width: 1600px) {
-      #our-story .flower-bed:first-child {
+      #our-story .flower-bed {
         margin-top: 0; } }
     @media (max-width: 1200px) {
-      #our-story .flower-bed:first-child {
+      #our-story .flower-bed {
         top: 25px; } }
   #our-story .flower-bed-two {
     -webkit-filter: brightness(0.95);
@@ -1119,24 +1104,28 @@ img {
     position: relative;
     z-index: 10;
     background-color: #f1f1f1;
-    top: -120px;
-    min-width: 100%; }
+    top: -215px;
+    min-width: 100%;
+    margin-top: -190px; }
     @media (max-width: 1200px) {
       #health-benefits .flower-bed {
+        margin-top: -50px;
         width: 1200px !important; } }
     @media (max-width: 767px) {
       #health-benefits .flower-bed {
         top: -47px;
+        top: -75px;
         width: 100% !important; } }
   #health-benefits .flower-bed-two {
     width: 100%;
-    position: absolute;
+    position: relative;
     bottom: 0;
-    z-index: 20; }
+    z-index: 20;
+    margin-top: calc(-100px - 22vw) !important; }
     @media (max-width: 992px) {
       #health-benefits .flower-bed-two {
         position: relative;
-        margin-top: 25px; } }
+        margin-top: 100px !important; } }
   #health-benefits .tea img {
     position: absolute;
     z-index: 10; }
@@ -1162,10 +1151,13 @@ img {
     position: relative;
     z-index: 11; }
   #health-benefits h2 {
-    margin-top: -240px; }
+    margin-top: -340px; }
+    @media (max-width: 1200px) {
+      #health-benefits h2 {
+        margin-top: -240px; } }
     @media (max-width: 767px) {
       #health-benefits h2 {
-        margin-top: -80px; } }
+        margin-top: -90px; } }
   #health-benefits h3 {
     background-color: #f9f9f9; }
     #health-benefits h3::after {
@@ -1174,14 +1166,21 @@ img {
         #health-benefits h3::after {
           width: 300px !important; } }
   #health-benefits .sources {
-    position: relative;
-    z-index: 11; }
-  #health-benefits .sources {
     top: -450px;
-    position: relative; }
+    position: relative;
+    position: relative;
+    z-index: 200; }
     @media (max-width: 992px) {
       #health-benefits .sources {
         top: 25px; } }
+    #health-benefits .sources a {
+      text-decoration: none; }
+      #health-benefits .sources a h6 {
+        -webkit-transition: 0.2s;
+        -o-transition: 0.2s;
+        transition: 0.2s; }
+      #health-benefits .sources a:hover h6 {
+        color: #acacac !important; }
   #health-benefits .text {
     top: -450px;
     position: relative; }
@@ -1290,19 +1289,22 @@ img {
 
 #contact {
   padding: 75px 0 14vw 0;
-  background-color: #fcfcfc;
+  background-color: #f9f9f9;
   position: relative; }
   @media (max-width: 1600px) {
     #contact {
-      padding: 75px 0 200px 0; } }
+      padding: 75px 0 250px 0; } }
   @media (max-width: 992px) {
     #contact {
-      padding: 75px 0 150px 0; } }
+      padding: 75px 0 200px 0; } }
   #contact .grey {
     width: 100%;
-    padding-top: 200px;
-    background-color: #f1f1f1; }
+    padding-top: 250px;
+    background-color: #f9f9f9; }
     @media (max-width: 992px) {
+      #contact .grey {
+        padding-top: 200px; } }
+    @media (max-width: 767px) {
       #contact .grey {
         padding-top: 150px; } }
   #contact h2 {
@@ -1326,7 +1328,8 @@ img {
     position: absolute;
     z-index: 1;
     top: 215px;
-    height: 550px; }
+    height: 550px;
+    display: none; }
     @media (max-width: 992px) {
       #contact .white-paint {
         height: 675px;
@@ -1338,6 +1341,7 @@ img {
     position: absolute;
     z-index: 1;
     bottom: 0;
+    opacity: 1;
     width: 1300px;
     min-width: 100%; }
     @media (max-width: 767px) {

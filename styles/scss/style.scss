@@ -11,6 +11,9 @@ html,body {
     font-size: 16px;
     overflow-x: hidden;
 }
+body {
+    background-color: $black;
+}
 
 ///////////////
 // SCROLLBAL //
@@ -122,19 +125,19 @@ p {
 .green {
     color: $green !important;
 }
-.line-streak {
-	padding: 0 20px;
-	display: inline-block;
-	position: relative;
-	&::after {
-		content: '';
-		width: 100%;
-		height: 1px;
-		z-index: -1;
-		background-color: $darkerGrey;
-		@include centerer;
-	}
-}
+//.line-streak {
+//	padding: 0 20px;
+//	display: inline-block;
+//	position: relative;
+//	&::after {
+//		content: '';
+//		width: 100%;
+//		height: 1px;
+//		z-index: -1;
+//		background-color: $darkerGrey;
+//		@include centerer;
+//	}
+//}
 //text styles end
 
 .container-fluid {
@@ -227,7 +230,7 @@ img {
 					top: 0;
 				}
 				a {
-					@include mQ($md) {
+					@include mQ($sm) {
 						padding: 5px !important;
 						color: $black !important;
 					}
@@ -524,7 +527,7 @@ img {
 			margin-top: -25px;
 		}
         .flower-bed {
-			opacity: 0.8;
+//			opacity: 0.8;
             @include mQ($xs) {
                 width: 1000px !important;
             }
@@ -634,12 +637,21 @@ img {
 ///////////////
 #our-story {
 	background-color: $white;
-	.flower-bed:first-child {
+//    .side-flowers {
+//        position: absolute;
+//        width: 100%;
+//        filter: brightness(0.95);
+//        @include mQ($xs) {
+//            display: none;
+//        }
+//    }
+	.flower-bed {
         margin-top: -5vw;
 		width: 100%;
 		background-color: $lightGrey;
 		position: absolute;
 		z-index: 10;
+//        display: none;
         @include mQ($lg) {
             margin-top: 0;
         }
@@ -732,27 +744,32 @@ img {
 	padding-bottom: 0px;
 	background-color: $white;
 	.flower-bed {
+//        display: none;
 		position: relative;
 		z-index: 10;
 		background-color: $lightGrey;
-		top: -120px;
+		top: -215px;
 		min-width: 100%;
+        margin-top: -190px;
 		@include mQ($md) {
+            margin-top: -50px;
 			width: 1200px !important;
 		}
 		@include mQ($xs) {
 			top: -47px;
+            top: -75px;
 			width: 100% !important;
 		}
 	}
 	.flower-bed-two {
 		width: 100%;
-		position: absolute;
+		position: relative;
 		bottom: 0;
 		z-index: 20;
+        margin-top: calc(-100px - 22vw) !important;
 		@include mQ($sm) {
 			position: relative;
-			margin-top: 25px;
+			margin-top: 100px !important;
 		}
 	}
 	.tea img {
@@ -784,9 +801,12 @@ img {
 		z-index: 11;
 	}
 	h2 {
-		margin-top: -240px;
+		margin-top: -340px;
+        @include mQ($md) {
+			margin-top: -240px;
+		}
 		@include mQ($xs) {
-			margin-top: -80px;
+			margin-top: -90px;
 		}
 	}
 	h3 {
@@ -799,15 +819,22 @@ img {
 		}
 	}
 	.sources {
-		position: relative;
-		z-index: 11;
-	}
-	.sources {
-		top: -450px;
+        top: -450px;
 		position: relative;
 		@include mQ($sm) {
 			top: 25px;
 		}
+		position: relative;
+		z-index: 200;
+        a {
+            text-decoration: none;
+            h6 {
+                transition: 0.2s;
+            }
+            &:hover h6 {
+                color: $darkGrey !important;
+            }
+        }
 	}
 	.text {
 		top: -450px;
@@ -880,19 +907,22 @@ img {
 /////////////
 #contact {
     padding: 75px 0 14vw 0;
-    background-color: $whiter;
+    background-color: $white;
     position: relative;
     @include mQ($lg) {
-        padding: 75px 0 200px 0;
+        padding: 75px 0 250px 0;
     }
     @include mQ($sm) {
-        padding: 75px 0 150px 0;
+        padding: 75px 0 200px 0;
     }
     .grey {
         width: 100%;
-        padding-top: 200px;
-        background-color: $lightGrey;
+        padding-top: 250px;
+        background-color: $white;
         @include mQ($sm) {
+            padding-top: 200px;
+        }
+        @include mQ($xs) {
             padding-top: 150px;
         }
     }
@@ -916,6 +946,7 @@ img {
         z-index: 1;
         top: 215px;
         height: 550px;
+        display: none;
         @include mQ($sm) {
             height: 675px;
             top: 160px;
@@ -928,6 +959,7 @@ img {
         position: absolute;
         z-index: 1;
         bottom: 0;
+        opacity: 1;
         width: 1300px;
         min-width: 100%;
         @include mQ($xs) {

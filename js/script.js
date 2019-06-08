@@ -3,17 +3,17 @@ $(document).ready(function() {
 // shop nav
 
 	$('.dropdown').hover(function() {
-		if($(window).width() > 1200) {
+		if($(window).width() > 992) {
 			$('.dropdown-menu').css('display', 'flex');
 		}
 	}, function() {
-		if($(window).width() > 1200) {
+		if($(window).width() > 992) {
 			$('.dropdown-menu').css('display', 'none');
 		}
 	});
 
 $('.dropdown').click(function() {
-	if($(window).width() <= 1200) {
+	if($(window).width() <= 992) {
 		$('.dropdown-menu').toggle();
 	}
 });
