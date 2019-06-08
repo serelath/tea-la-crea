@@ -227,7 +227,7 @@
 		img {
 			transform: scale(0.95);
 			transition: 0.3s ease-out;
-			filter: saturate(0.6);
+			filter: saturate(0.65);
 			width: 60% !important;
 			opacity: 0.85;
 		}
@@ -250,7 +250,6 @@
             h5 {
                 font-size: 1rem !important;
                 font-family: $serifFont !important;
-                font-weight: 400 !important;
             }
 			.cost {
 				h5, p, h6 {
@@ -347,13 +346,16 @@
 	letter-spacing: 1px;
 	width: 200px;
 	font-family: $textFont !important;
+//    color: $white !important;
 	&.new {
+//        background-color: $green;
 //		border: 2px dotted $green;
 //		border-top: 1px dashed $green;
 		border-bottom: 2px dashed $green;
 		color: $green !important;
 	}
 	&.hot {
+//        background-color: $black;
 //		border: 2px dotted $brown;
 //		border-top: 1px dashed $brown;
 		border-bottom: 2px dashed $brown;

@@ -233,8 +233,8 @@
       -webkit-transition: 0.3s ease-out;
       -o-transition: 0.3s ease-out;
       transition: 0.3s ease-out;
-      -webkit-filter: saturate(0.6);
-      filter: saturate(0.6);
+      -webkit-filter: saturate(0.65);
+      filter: saturate(0.65);
       width: 60% !important;
       opacity: 0.85; }
     .listings > a > div .label {
@@ -259,8 +259,7 @@
             font-size: 0.8rem !important; } }
       .listings > a > div .label h5 {
         font-size: 1rem !important;
-        font-family: "EB Garamond", serif !important;
-        font-weight: 400 !important; }
+        font-family: "EB Garamond", serif !important; }
       .listings > a > div .label .cost h5, .listings > a > div .label .cost p, .listings > a > div .label .cost h6 {
         text-align: left !important; }
       .listings > a > div .label .cost h5, .listings > a > div .label .cost p {
@@ -645,8 +644,8 @@ img {
             padding: 5px !important;
             color: #1a1a1a !important; } }
         .nav-container .navbar .navbar-nav .dropdown .dropdown-menu a img {
-          -webkit-filter: saturate(0.6);
-          filter: saturate(0.6);
+          -webkit-filter: saturate(0.65);
+          filter: saturate(0.65);
           opacity: 0.85;
           -webkit-transition: 0.2s;
           -o-transition: 0.2s;
