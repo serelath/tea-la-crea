@@ -19,9 +19,9 @@
       top: 40px;
       right: 65px; } }
   .cart .cart-btn:hover p, .cart .cart-btn:hover i {
-    color: #606060 !important; }
+    color: #acacac !important; }
   .cart .cart-btn p, .cart .cart-btn i {
-    color: #acacac !important;
+    color: #606060 !important;
     -webkit-transition: 0.2s;
     -o-transition: 0.2s;
     transition: 0.2s; }
@@ -280,7 +280,7 @@
     height: 70vh;
     display: inline-block;
     padding: 0 !important;
-    opacity: 0.8;
+    opacity: 0.95;
     margin: -1px;
     border: 8px solid #f1f1f1;
     float: left;

@@ -22,10 +22,10 @@
 		right: 65px;
 	}
 	&:hover p, &:hover i {
-		color: $darkerGrey !important;
+		color: $darkGrey !important;
 	}
 	p, i {
-		color: $darkGrey !important;
+		color: $darkerGrey !important;
 		transition: 0.2s;
 	}
 	p {
@@ -280,7 +280,7 @@
 		height: 70vh;
 		display: inline-block;
 		padding: 0 !important;
-		opacity: 0.8;
+		opacity: 0.95;
 		margin: -1px;
 		border: 8px solid $lightGrey;
 		float: left;
