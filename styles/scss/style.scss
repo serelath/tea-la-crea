@@ -158,6 +158,9 @@ img {
         line-height: 1.5rem;
         position: relative;
     }
+	@include mQ($xxs) {
+		left: 45px;
+	}
 
     @include centerX;
     .serif {
@@ -178,7 +181,7 @@ img {
 .navbar {
     background-color: $white;
     position: relative;
-    box-shadow: 2px 0 4px rgba(0,0,0, 0.05);
+    box-shadow: 1px 0 4px rgba(0,0,0, 0.05);
     .navbar-toggler {
         border: 0;
     }
@@ -212,6 +215,7 @@ img {
 				width: 100vw;
 				display: none;
 				justify-content: space-around;
+				box-shadow: 1px 0 4px rgba(0,0,0, 0.05);
 				padding: 0 15%;
 				background-color: white !important;
                 filter: brightness(0.99);
@@ -228,7 +232,8 @@ img {
 						color: $black !important;
 					}
 					img {
-						filter: saturate(0.7);
+						filter: saturate(0.6);
+						opacity: 0.85;
 						transition: 0.2s;
 						
 						@include mQ($sm) {
@@ -239,7 +244,7 @@ img {
 						background-color: white !important;
 					}
 					&:hover img {
-						filter: saturate(0.9);
+						opacity: 0.9;
 					}
 				}
 			}
@@ -247,14 +252,37 @@ img {
         .nav-item {
             display: inline-block;
             position: relative;
-            left: 45px;
+			left: -5px;
             z-index: 2;
+			text-transform: uppercase !important;
+//			&:nth-child(5) {
+//				position: fixed;
+//				right: -98%;
+//				top: 0 !important;
+//				transform: scale(0.9) translateY(-4%);
+//			}
+			&:nth-child(5) {
+				@include mQ($sm) {
+					display: none !important;
+				}
+			}
+			&:nth-child(6) {
+				display: none;
+				@include mQ($sm) {
+					display: block;
+				}
+			}
+			i {
+				color: $darkGrey !important;
+				transition: 0.3s;
+				transform: scale(1.2);
+			}
             @include mQ($lg) {
-                left: 30px;
-                padding: 0 20px;
+                left: -5px;
+                padding: 0 18px;
             }
             @include mQ($md) {
-                left: 18px;
+                left: -15px;
                 padding: 0 12px;
             }
             @include mQ($sm) {
@@ -289,8 +317,10 @@ img {
                 }
                 &:hover {
                     color: $black !important;
-                    
                 }
+				&:hover i {
+					color: $black !important;
+				}
             }
         }
     }
@@ -479,13 +509,9 @@ img {
         @include mQ($md) {
             padding-top: 10px;
         }
-		.white-paint {
-			position: absolute;
-			top: -50px;
-            width: 100%;
-		}
 		.pouring-tea {
-			margin-top: 20px;
+//			margin-top: 20px;
+			margin-top: -100px;
 			@include mQ($sm) {
 				margin-top: 20px;
 			}
