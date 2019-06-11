@@ -374,7 +374,7 @@
     opacity: 0.95; }
   #products .options > div {
     position: relative;
-    background-color: #1a1a1a;
+    background-color: #f1f1f1;
     cursor: pointer;
     -webkit-transition: 0.2s;
     -o-transition: 0.2s;
@@ -396,12 +396,6 @@
       -webkit-transition: 0.2s;
       -o-transition: 0.2s;
       transition: 0.2s; }
-    #products .options > div h5, #products .options > div h6, #products .options > div p, #products .options > div span, #products .options > div i {
-      color: #f9f9f9 !important;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none; }
     #products .options > div p {
       font-family: "EB Garamond", serif; }
     #products .options > div i {

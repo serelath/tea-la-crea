@@ -398,7 +398,7 @@
 	.options {
 		& > div {
 			position: relative;
-			background-color: $black;
+			background-color: $lightGrey;
 			cursor: pointer;
 			transition: 0.2s;
 			border: 2px solid white;
@@ -422,10 +422,10 @@
 				border: 1px solid $black;
 				transition: 0.2s;
 			}
-			h5, h6, p, span, i {
-				color: $white !important;
-				user-select: none;
-			}
+//			h5, h6, p, span, i {
+//				color: $white !important;
+//				user-select: none;
+//			}
 			p {
 				font-family: $serifFont;
 			}
